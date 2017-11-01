@@ -24,6 +24,7 @@
                 <prop key="renew.htm">renewController</prop>
                 <prop key="order.htm">orderController</prop>
                 <prop key="person.htm">personController</prop>
+                <prop key="password.htm">passwordController</prop>
                 
                 <prop key="home.htm">homeController</prop>
                 <prop key="gooddetails.htm">goodController</prop>
@@ -61,6 +62,10 @@
     
     <bean name="personController"
           class="controller.PersonController"
+          />
+    
+     <bean name="passwordController"
+          class="controller.PasswordController"
           />
     
     <bean name="homeController"
