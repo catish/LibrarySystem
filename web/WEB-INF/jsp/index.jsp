@@ -70,24 +70,30 @@
         </div>
         <ul class="am-g part-content solutions-content">
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+            <a href="search.htm">
             <i class="am-icon-safari solution-circle"></i>
             <span class="solutions-title">图书检索</span>
-            <p class="solutions-way">微信公众号开发移动网站微信公众号开发</p>
+            <p class="solutions-way">
+          </a>
+
           </li>
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+            <a href="renew.htm">
             <i class="am-icon-magic solution-circle"></i>
             <span class="solutions-title">快速续借</span>
-            <p class="solutions-way">移动网站微信公众号开发移动网站微信公众号开发,解决方案</p>
+            </a>
           </li>
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+            <a href="order.htm">
             <i class="am-icon-phone solution-circle"></i>
-            <span class="solutions-title">订单查询</span>
-            <p class="solutions-way">移动网站微信公众号开发移动网站微信公众号开发</p>
+            <span class="solutions-title">借阅查询</span>
+            </a>
           </li>
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
+            <a href="person.htm">
             <i class="am-icon-phone solution-circle"></i>
-            <span class="solutions-title">修改信息</span>
-            <p class="solutions-way">移动网站微信公众号开发移动网站微信公众号开发</p>
+            <span class="solutions-title">个人信息</span>
+            </a>
           </li>
         </ul>
     </div>

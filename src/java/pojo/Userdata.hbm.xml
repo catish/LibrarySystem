@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-21 18:49:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Userdata" table="USERDATA" schema="NIIT" optimistic-lock="version">
+        <id name="email" type="string">
+            <column name="EMAIL" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="20" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="11" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="200" />
+        </property>
+        <property name="synopsis" type="string">
+            <column name="SYNOPSIS" length="500" />
+        </property>
+        <property name="authority" type="java.lang.Integer">
+            <column name="AUTHORITY" />
+        </property>
+    </class>
+</hibernate-mapping>

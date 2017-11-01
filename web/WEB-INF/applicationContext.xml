@@ -22,4 +22,39 @@
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
 
+    <bean id="mysessionfactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+    </bean>
+    
+    <bean id="userdatadaobean" class="dao.UserdataDao">
+        <property name="sessionfactory" ref="mysessionfactory"/>
+    </bean>
+   
+    <bean id="categorydaobean" class="dao.CategoryDao">
+        <property name="sessionfactory" ref="mysessionfactory"/>
+    </bean>
+    
+    <bean id="gooddaobean" class="dao.GoodDao">
+        <property name="sessionfactory" ref="mysessionfactory"/>
+    </bean>
+
+    <bean name="homeservicebean" class="service.HomeService">
+        <property name="cd" ref="categorydaobean" />
+        <property name="gd" ref="gooddaobean" />
+    </bean>
+    
+    <bean name="goodservicebean" class="service.GoodService">
+        <property name="gd" ref="gooddaobean" />
+    </bean>
+    
+    <bean name="goodlistservicebean" class="service.GoodlistService">
+        <property name="gd" ref="gooddaobean" />
+    </bean>
+    
+    
+    <bean name="registerservicebean" class="service.RegisterService" >
+        <property name="udd" ref="userdatadaobean"/>
+    </bean>
+    
+    
 </beans>

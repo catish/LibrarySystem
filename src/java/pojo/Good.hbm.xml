@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-21 18:49:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Good" table="GOOD" schema="NIIT" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cgid" type="int">
+            <column name="CGID" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="50" />
+        </property>
+        <property name="price" type="java.lang.Integer">
+            <column name="PRICE" />
+        </property>
+        <property name="stock" type="java.lang.Integer">
+            <column name="STOCK" />
+        </property>
+        <property name="sales" type="java.lang.Integer">
+            <column name="SALES" />
+        </property>
+        <property name="adddate" type="date">
+            <column name="ADDDATE" length="10" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="300" />
+        </property>
+        <property name="pmid" type="java.lang.Integer">
+            <column name="PMID" />
+        </property>
+    </class>
+</hibernate-mapping>

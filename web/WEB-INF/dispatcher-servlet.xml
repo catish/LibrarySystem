@@ -20,6 +20,17 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="search.htm">searchController</prop>
+                <prop key="renew.htm">renewController</prop>
+                <prop key="order.htm">orderController</prop>
+                <prop key="person.htm">personController</prop>
+                
+                <prop key="home.htm">homeController</prop>
+                <prop key="gooddetails.htm">goodController</prop>
+                <prop key="goodlist.htm">goodlistController</prop>
+                <prop key="login.htm">loginController</prop>
+                <prop key="register.htm">registerController</prop>
+                <prop key="goodmanage.htm">goodmanageController</prop>
             </props>
         </property>
     </bean>
@@ -36,4 +47,48 @@
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
 
+    <bean name="searchController"
+          class="controller.SearchController"
+          />
+    
+    <bean name="renewController"
+          class="controller.RenewController"
+          />
+    
+    <bean name="orderController"
+          class="controller.OrderController"
+          />
+    
+    <bean name="personController"
+          class="controller.PersonController"
+          />
+    
+    <bean name="homeController"
+          class="controller.HomeController"
+          p:homeservice-ref = "homeservicebean"
+          />
+    
+    <bean name="goodController"
+        class="controller.GoodController"
+        p:goodservice-ref="goodservicebean"
+    />
+    
+    <bean name="goodlistController"
+        class="controller.GoodlistController"
+        p:goodlistservice-ref="goodlistservicebean"
+    />
+    
+    <bean name="loginController"
+          class="controller.LoginController"
+          />
+    
+    <bean name="registerController"
+          class="controller.RegisterController"
+          p:registerservice-ref="registerservicebean"
+          />
+    
+    <bean name="goodmanageController"
+        class="controller.GoodmanageController"
+    />
+    
 </beans>
