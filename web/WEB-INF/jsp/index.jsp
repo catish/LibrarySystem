@@ -86,7 +86,7 @@
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">
             <a href="order.htm">
             <i class="am-icon-phone solution-circle"></i>
-            <span class="solutions-title">借阅查询</span>
+            <span class="solutions-title">借阅记录</span>
             </a>
           </li>
           <li class="am-u-sm-6 am-u-md-3 am-u-lg-3">

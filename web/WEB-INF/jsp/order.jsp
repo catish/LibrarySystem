@@ -10,13 +10,16 @@
 
 <html>
 <head>
-  <title>借阅查询</title>
+  <title>借阅记录</title>
+
   <link rel="stylesheet" href="css/amazeui.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/hmstyle.css"/>
 
-  <script src="/js/amazeui.min.js"></script>
-  <script src="/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/admin.css"/>
+  <link rel="stylesheet" href="css/personal.css"/>
+  <link rel="stylesheet" href="css/stepstyle.css"/>
+  
 </head>
 
     <body>
@@ -54,8 +57,6 @@
   </div>
 </header>
 
-
-
 <br/>
 <br/>
 <br/>
@@ -66,36 +67,111 @@
         <div class="main-wrap">
         
           <div class="am-cf am-padding">
-            <div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">修改密码</strong> / <small>Password</small></div>
+            <div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">借阅记录</strong> / <small>Borrowing Record</small></div>
           </div>
           <hr/>
-          
-          <form class="am-form am-form-horizontal">
-            <div class="am-form-group">
-              <label for="user-old-password" class="am-form-label">原密码</label>
-              <div class="am-form-content">
-                <input type="password" id="user-old-password" placeholder="请输入原登录密码">
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label for="user-new-password" class="am-form-label">新密码</label>
-              <div class="am-form-content">
-                <input type="password" id="user-new-password" placeholder="由数字、字母组合">
-              </div>
-            </div>
-            <div class="am-form-group">
-              <label for="user-confirm-password" class="am-form-label">确认密码</label>
-              <div class="am-form-content">
-                <input type="password" id="user-confirm-password" placeholder="请再次输入上面的密码">
-              </div>
-            </div>
-            <div class="info-btn">
-              <div class="am-btn am-btn-danger">保存修改</div>
-            </div>
 
-          </form>
+<div class="am-tabs" data-am-tabs>
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active"><a href="#tab1">进行中</a></li>
+    <li><a href="#tab2">已完成</a></li>
+  </ul>
+
+  <div class="am-tabs-bd">
+    <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+      <table class="am-table am-table-striped am-table-hover">
+<thead>
+        <tr>
+            <th>书名</th>
+            <th>作者</th>
+            <th>借阅时间</th>
+            <th>应还时间</th>
+            <th>状态</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+        </tr>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+        </tr>
+        <tr>
+            <td>Amaze UI(Active)</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+        </tr>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+    <div class="am-tab-panel am-fade" id="tab2">
+      <table class="am-table am-table-striped am-table-hover">
+<thead>
+        <tr>
+            <th>书名</th>
+            <th>作者</th>
+            <th>借阅时间</th>
+            <th>归还时间</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            
+        </tr>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            
+        </tr>
+        <tr>
+            <td>Amaze UI(Active)</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            
+        </tr>
+        <tr>
+            <td>Amaze UI</td>
+            <td>http://amazeui.org</td>
+            <td>2012-10-01</td>
+            <td>2012-10-01</td>
+            
+        </tr>
+    </tbody>
+</table>
+    </div>
+  </div>
+</div>
+
 
         </div>
+          
+
+
         <!--底部-->
         <div >
           
@@ -118,6 +194,17 @@
       </aside>
     </div>
 
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
 
     </body>
 </html>

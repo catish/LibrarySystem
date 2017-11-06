@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="css/stepstyle.css"/>
   
 
-  <script src="/js/amazeui.min.js"></script>
-  <script src="/js/jquery.min.js"></script>
+  <script src="js/amazeui.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 </head>
 
     <body>

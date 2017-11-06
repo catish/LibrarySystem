@@ -11,12 +11,15 @@
 <html>
 <head>
   <title>快速续借</title>
+
   <link rel="stylesheet" href="css/amazeui.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/hmstyle.css"/>
 
-  <script src="/js/amazeui.min.js"></script>
-  <script src="/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/admin.css"/>
+  <link rel="stylesheet" href="css/personal.css"/>
+  <link rel="stylesheet" href="css/stepstyle.css"/>
+  
 </head>
 
     <body>
@@ -53,6 +56,71 @@
   </div>
   </div>
 </header>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="center">
+      <div class="col-main">
+        <div class="main-wrap">
+        
+          <div class="am-cf am-padding">
+            <div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">快速续借</strong> / <small>Quick Renew</small></div>
+          </div>
+          <hr/>
+          
+          <form class="am-form am-form-horizontal">
+            <div class="am-form-group">
+              <label for="user-old-password" class="am-form-label">图书编号</label>
+              <div class="am-form-content">
+                <input type="text" id="user-old-password" placeholder="请输入原登录密码">
+              </div>
+            </div>
+            
+            <div class="info-btn">
+              <div class="am-btn am-btn-danger">保存修改</div>
+            </div>
+
+          </form>
+
+        </div>
+        <!--底部-->
+        <div >
+          
+        </div>
+      </div>
+
+      <aside class="menu">
+        <ul>
+          <li class="person">
+            <a href="person.htm">个人资料</a>
+          </li>
+          <li class="person">
+            <a href="password.htm">账户安全</a>
+          </li>
+          <li class="person">
+            <a href="order.htm">借阅记录</a>
+          </li>
+          <li class="person">
+            <a href="renew.htm">快速续借</a>
+          </li>
+        </ul>
+
+      </aside>
+    </div>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
 
     </body>
 </html>
