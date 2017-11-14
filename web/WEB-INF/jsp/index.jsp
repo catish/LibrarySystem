@@ -40,7 +40,7 @@
       <li><a href="service-center.html">服务中心 </a></li>
       <li><a href="news.html">新闻动态 </a></li>
       <li><a href="about-us.html">关于我们</a></li>
-      <li><a href="recruit.html">招贤纳士 </a></li>
+      <li><a href="recruit.html">招贤纳 </a></li>
     </ul>
     </div>
 
